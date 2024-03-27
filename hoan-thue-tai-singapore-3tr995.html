@@ -167,7 +167,7 @@
 
         <div class="editable-style silex-id-1552772425150-3 text-element silex-component prevent-resizable hamburger-menu prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1711516312812_998 closed">
+<div class="hamburger-menu_1711518508346_3 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -194,13 +194,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1711516312812_998').classList.remove('open');
-    document.querySelector('.hamburger-menu_1711516312812_998').classList.add('closed');
+    document.querySelector('.hamburger-menu_1711518508346_3').classList.remove('open');
+    document.querySelector('.hamburger-menu_1711518508346_3').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1711516312812_998').classList.add('open');
-    document.querySelector('.hamburger-menu_1711516312812_998').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1711518508346_3').classList.add('open');
+    document.querySelector('.hamburger-menu_1711518508346_3').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -210,7 +210,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1711516312812_998').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1711518508346_3').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -218,10 +218,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1711516312812_998 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1711518508346_3 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1711516312812_998 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1711518508346_3 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -241,10 +241,7 @@
                     </p></div>
                 </div><a class="editable-style image-element silex-id-1436036524431-29" href="index.html">
                     <img src="assets/cc.png" class="" alt="Logo">
-                </a></div></header><div class="editable-style html-element silex-id-1711515433360-0 page-hoan-thue-tai-singapore-3tr995 paged-element paged-element-visible"><div class="silex-element-content"><title>Hoàn thuế tại singapore - 3tr995 - Hoàn thuế ở Singapore được báo nhiều, Cách hoàn thuế ở sân bay Singapore, Mua iPhone ở Singapore có được hoàn thuế không, Thuế GST ở Singapore</title>
-<meta name="description" content="Cách lấy tiền hoàn thuế tại Singapore sau khi mua sắm - Hoàn thuế ở Singapore được bao nhiêu - Cách hoàn thuế ở sân bay Singapore - Mua iPhone ở Singapore có được hoàn thuế không - Thuế GST ở Singapore bao nhiêu là những câu hỏi được khách du lịch quan tâm sẽ được chia sẽ trong bài viết này">
-
-<h1>Hoàn thuế tại singapore - 3tr995 - Hoàn thuế ở Singapore được bao nhiêu, Cách hoàn thuế ở sân bay Singapore, Mua iPhone ở Singapore có được hoàn thuế không, Thuế GST ở Singapore</h1>
+                </a></div></header><div class="editable-style html-element silex-id-1711515433360-0 page-hoan-thue-tai-singapore-3tr995 paged-element paged-element-visible"><div class="silex-element-content"><h1>Hoàn thuế tại singapore - 3tr995 - Hoàn thuế ở Singapore được bao nhiêu, Cách hoàn thuế ở sân bay Singapore, Mua iPhone ở Singapore có được hoàn thuế không, Thuế GST ở Singapore</h1>
 <h2>Cách lấy tiền hoàn thuế tại Singapore sau khi mua sắm - Hoàn thuế ở Singapore được bao nhiêu - Cách hoàn thuế ở sân bay Singapore - Mua iPhone ở Singapore có được hoàn thuế không - Thuế GST ở Singapore bao nhiêu là những câu hỏi được khách du lịch quan tâm sẽ được chia sẽ trong bài viết này</h2>
 <p><img alt="Hoàn thuế tại singapore - 3tr995 - Hoàn thuế ở Singapore được bao nhiêu, Cách hoàn thuế ở sân bay Singapore, Mua iPhone ở Singapore có được hoàn thuế không, Thuế GST ở Singapore" src="https://45373204.fs1.hubspotusercontent-na1.net/hub/45373204/hubfs/ho%C3%A0n%20thu%E1%BA%BF%20t%E1%BA%A1i%20singapore.jpg?width=640&amp;height=426&amp;name=ho%C3%A0n%20thu%E1%BA%BF%20t%E1%BA%A1i%20singapore.jpg" style="width: 640px; height: 426px;"></p>
 <p>Tất nhiên, để có thể lấy lại tiền có những điều khoản và thủ tục phải được đáp ứng và tuân theo. Một trong số đó, người mua hàng hóa và dịch vụ phải là công dân nước ngoài (người nước ngoài), không phải người Singapore hoặc thường trú nhân Singapore. Sau đây là các điều kiện phải được đáp ứng để được hoàn thuế khi mua sắm:<br>
@@ -254,9 +251,18 @@ Không phải nhân viên của các hãng hàng không hoặc phương tiện g
 Phải trên 16 tuổi.<br>
 Đã thực hiện giao dịch trong vòng 2 tháng kể từ ngày nộp đơn cho thủ tục khai thuế.<br>
 Có những quy định cho hàng hóa không thể được hoàn trả. Ví dụ: vé tham quan, thuê xe, thanh toán khách sạn và những thứ khác. Các mặt hàng chi tiêu ở Singapore cũng không được hoàn trả. Hãy mua sắm vui vẻ và thông minh nhé!<br>
-Câu hỏi liên quan<br>
-Trả lời cho câu hỏi Mua iPhone ở Singapore có rẻ hơn không?<br>
-Câu trả lời cho câu hỏi Mua iPhone ở Singapore có rẻ hơn không là giá không hề rẻ hơn, nhưng được ưu điểm lớn nhất là nhận được sản phẩm sớm, còn nhược điểm là việc bảo hành chính hãng máy không được thuận lợi vì nếu máy có trục trặc hư hỏng thì sản phẩm phải được bảo hành chính hãng tại Singapore mới được.</p>
+</p>
+<div itemscope="" itemtype="https://schema.org/FAQPage">
+    <p><b>Câu hỏi liên quan</b></p>
+    <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+        <h2 itemprop="name">Trả lời cho câu hỏi Mua iPhone ở Singapore có rẻ hơn không?</h2>
+        <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+                Câu trả lời cho câu hỏi Mua iPhone ở Singapore có rẻ hơn không là giá không hề rẻ hơn, nhưng được ưu điểm lớn nhất là nhận được sản phẩm sớm, còn nhược điểm là việc bảo hành chính hãng máy không được thuận lợi vì nếu máy có trục trặc hư hỏng thì sản phẩm phải được bảo hành chính hãng tại Singapore mới được.
+            </div>
+        </div>
+    </div>
+</div>
 
 <p>
 <a href="http://bugcrowd.com/external_redirect?site=https://youtu.be/HFonE81-qjk">https://youtu.be/HFonE81-qjk</a>

@@ -167,7 +167,7 @@
 
         <div class="editable-style silex-id-1552772425150-3 text-element silex-component prevent-resizable hamburger-menu prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1711516312812_998 closed">
+<div class="hamburger-menu_1711518508346_3 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -194,13 +194,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1711516312812_998').classList.remove('open');
-    document.querySelector('.hamburger-menu_1711516312812_998').classList.add('closed');
+    document.querySelector('.hamburger-menu_1711518508346_3').classList.remove('open');
+    document.querySelector('.hamburger-menu_1711518508346_3').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1711516312812_998').classList.add('open');
-    document.querySelector('.hamburger-menu_1711516312812_998').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1711518508346_3').classList.add('open');
+    document.querySelector('.hamburger-menu_1711518508346_3').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -210,7 +210,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1711516312812_998').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1711518508346_3').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -218,10 +218,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1711516312812_998 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1711518508346_3 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1711516312812_998 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1711518508346_3 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
