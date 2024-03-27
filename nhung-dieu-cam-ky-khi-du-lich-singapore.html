@@ -167,7 +167,7 @@
 
         <div class="editable-style silex-id-1552772425150-3 text-element silex-component prevent-resizable hamburger-menu prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1711513918800_707 closed">
+<div class="hamburger-menu_1711515299255_789 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -178,7 +178,7 @@
         <nav class="">
             <ul>
             
-                <li><a href="index.html" class="">Home</a></li>
+                <li><a href="index.html">Home</a></li>
             
                 <li><a href="contact.html">Contact</a></li>
             
@@ -194,13 +194,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1711513918800_707').classList.remove('open');
-    document.querySelector('.hamburger-menu_1711513918800_707').classList.add('closed');
+    document.querySelector('.hamburger-menu_1711515299255_789').classList.remove('open');
+    document.querySelector('.hamburger-menu_1711515299255_789').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1711513918800_707').classList.add('open');
-    document.querySelector('.hamburger-menu_1711513918800_707').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1711515299255_789').classList.add('open');
+    document.querySelector('.hamburger-menu_1711515299255_789').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -210,7 +210,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1711513918800_707').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1711515299255_789').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -218,10 +218,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1711513918800_707 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1711515299255_789 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1711513918800_707 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1711515299255_789 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
