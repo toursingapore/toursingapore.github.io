@@ -41,7 +41,7 @@
         // Check if the meta description tag exists
         if (metaDescriptionTag) {
             // Set the content attribute of the meta description tag to the concatenated text content of all h1 tags
-            metaDescriptionTag.setAttribute('content', h1Element);
+            metaDescriptionTag.setAttribute('content', h1Element.innerText);
         } else {
             console.log('Meta description tag not found.');
         }        
