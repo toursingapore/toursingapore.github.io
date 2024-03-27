@@ -19,21 +19,20 @@
 <script type="text/javascript">
     // Wait for the page to load
     window.addEventListener("load", function () {
+        // Get the title tag
+        var titleElement = document.querySelector("title");        
         // Get all h1 tag, then select second h1 within body tag
         var h1Element = document.querySelectorAll("h1")[1];
-        // Check if the h1 tag exists        
+        // Check if second h1 within body tag exists        
         if (h1Element) {
-            // Get the title tag
-            var titleElement = document.querySelector("title");
-            if (titleElement) {
-                // Check if the title tag exists
-                // Set the title tag content to the text content of the h1 tag
-                titleElement.innerText = h1Element.innerText;
-            } else {
-                console.log("Title tag not found.");
-            }
+            // Set the title tag content to the text content of the h1 tag
+            titleElement.innerText = h1Element.innerText;
         } else {
-            console.log("No h1 tag found in the body.");
+            //alert("No h1 tag found in the body.");
+            // Set the title tag content to the text content of the h1 tag in head
+            h1Element = document.querySelector("h1");
+            //alert(h1Element.innerText);
+            titleElement.innerText = h1Element.innerText;            
         }
 
         // Get the meta tag with name="description"
