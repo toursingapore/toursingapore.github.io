@@ -167,7 +167,7 @@
 
         <div class="editable-style silex-id-1552772425150-3 text-element silex-component prevent-resizable hamburger-menu prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1710566693052_724 closed">
+<div class="hamburger-menu_1711513918800_707 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -180,7 +180,7 @@
             
                 <li><a href="index.html" class="page-link-active">Home</a></li>
             
-                <li><a href="contact.html" class="">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             
                 <li><a href="https://www.silex.me/">Powered by Silex</a></li>
             
@@ -194,13 +194,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1710566693052_724').classList.remove('open');
-    document.querySelector('.hamburger-menu_1710566693052_724').classList.add('closed');
+    document.querySelector('.hamburger-menu_1711513918800_707').classList.remove('open');
+    document.querySelector('.hamburger-menu_1711513918800_707').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1710566693052_724').classList.add('open');
-    document.querySelector('.hamburger-menu_1710566693052_724').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1711513918800_707').classList.add('open');
+    document.querySelector('.hamburger-menu_1711513918800_707').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -210,7 +210,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1710566693052_724').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1711513918800_707').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -218,10 +218,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1710566693052_724 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1711513918800_707 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1710566693052_724 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1711513918800_707 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
@@ -254,12 +254,12 @@
             </div><div class="editable-style image-element silex-id-1483131239727-16">
                 <img src="assets/pic08.jpg" class="" alt="an illustrative image"></div><div class="editable-style text-element product-details silex-id-1436036523626-21">
                 <div class="silex-element-content normal">
-                    <h3>Những điều cấm kỵ khi du lịch Singapore 3tr995 Luật cấm ở Singapore &amp; Những thực phẩm không được</h3>
+                    <h3><a href="https://toursingapore.github.io/nhung-dieu-cam-ky-khi-du-lich-singapore.html">Những điều cấm kỵ khi du lịch Singapore 3tr995 Luật cấm ở Singapore &amp; Những thực phẩm không được</a></h3>
                     
                         
                     
                     
-                        <p>Những điều cấm kỵ khi du lịch Singapore - 3tr995 - Luật cấm ở Singapore &amp; Những thực phẩm không được mang vào Singapore - Bị trục xuất khỏi Singapore có quay lại được không - Những điều cần biết khi du lịch Singapore được chia sẽ trong bài viết này.<br></p><p><b><a href="nhung-dieu-cam-ky-khi-du-lich-singapore.html" title="Những điều cấm kỵ khi du lịch Singapore 3tr995 Luật cấm ở Singapore &amp; Những thực phẩm không được" class="">MORE</a></b></p>
+                        <p>Những điều cấm kỵ khi du lịch Singapore - 3tr995 - Luật cấm ở Singapore &amp; Những thực phẩm không được mang vào Singapore - Bị trục xuất khỏi Singapore có quay lại được không - Những điều cần biết khi du lịch Singapore được chia sẽ trong bài viết này.<br></p><p><b><a href="nhung-dieu-cam-ky-khi-du-lich-singapore.html" title="Những điều cấm kỵ khi du lịch Singapore 3tr995 Luật cấm ở Singapore &amp; Những thực phẩm không được">MORE</a></b></p>
                     
                 </div>
             </div></div>
