@@ -1,38 +1,53 @@
 <!doctype html><html lang="en"><head>
-    <title></title>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Tour singapore giá rẻ - 3tr995" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <meta name="description" content="Những điều cấm kỵ khi du lịch Singapore - 3tr995 - Luật cấm ở Singapore & Những thực phẩm không được mang vào Singapore - Bị trục xuất khỏi Singapore có quay lại được không - Những điều cần biết khi du lịch Singapore được chia sẽ trong bài viết này"/>
-    <meta name="author" content="Tour singapore giá rẻ - 3tr995" />
-    <meta name="robots" content="max-image-preview:large" />
-    <!--Script auto generate meta canonical from current url-->
-    <script type="text/javascript">
-        var link = !!document.querySelector("link[rel='canonical']") ? document.querySelector("link[rel='canonical']") : document.createElement("link");
-        link.setAttribute("rel", "canonical");
-        link.setAttribute("href", location.protocol + "//" + location.host + location.pathname);
-        document.head.appendChild(link);
-
-        
-        // Wait for the page to load
-        window.addEventListener('load', function() {
-            // Get all h1 tag, then select second h1 within body tag
-            var h1Element = document.querySelectorAll("h1")[1];
-            if (h1Element) { // Check if the h1 tag exists
-                // Get the title tag
-                var titleElement = document.querySelector('title');
-                if (titleElement) { // Check if the title tag exists
-                    // Set the title tag content to the text content of the h1 tag
-                    titleElement.innerText = h1Element.innerText;
-                } else {
-                    alert('Title tag not found.');
-                }
+<title></title>
+<meta name="description" content=""/>    
+<meta charset="utf-8" />
+<meta name="generator" content="Tour singapore giá rẻ - 3tr995" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="author" content="Tour singapore giá rẻ - 3tr995" />
+<meta name="robots" content="max-image-preview:large" />
+    
+<!--Script auto generate meta canonical from current url-->
+<script type="text/javascript">
+    var link = !!document.querySelector("link[rel='canonical']") ? document.querySelector("link[rel='canonical']") : document.createElement("link");
+    link.setAttribute("rel", "canonical");
+    link.setAttribute("href", location.protocol + "//" + location.host + location.pathname);
+    document.head.appendChild(link);
+</script>
+    
+<!--Script to get the content of h1 tag in body and insert it into the title-->
+<script type="text/javascript">
+    // Wait for the page to load
+    window.addEventListener("load", function () {
+        // Get all h1 tag, then select second h1 within body tag
+        var h1Element = document.querySelectorAll("h1")[1];
+        // Check if the h1 tag exists        
+        if (h1Element) {
+            // Get the title tag
+            var titleElement = document.querySelector("title");
+            if (titleElement) {
+                // Check if the title tag exists
+                // Set the title tag content to the text content of the h1 tag
+                titleElement.innerText = h1Element.innerText;
             } else {
-                alert('No h1 tag found in the body.');
+                console.log("Title tag not found.");
             }
-        });
-                 
-    </script>
+        } else {
+            console.log("No h1 tag found in the body.");
+        }
+
+        // Get the meta tag with name="description"
+        var metaDescriptionTag = document.querySelector('meta[name="description"]');
+        // Check if the meta description tag exists
+        if (metaDescriptionTag) {
+            // Set the content attribute of the meta description tag to the concatenated text content of all h1 tags
+            metaDescriptionTag.setAttribute('content', h1Element);
+        } else {
+            console.log('Meta description tag not found.');
+        }        
+    });
+</script>
+
 
     <script src="js/jquery.js"></script>
     
