@@ -16,8 +16,8 @@
         
         // Wait for the page to load
         window.addEventListener('load', function() {
-            // Get the h1 tag within the body
-            var h1Element = document.querySelector('body h1');
+            // Get all h1 tag, then select second h1 within body tag
+            var h1Element = document.querySelectorAll("h1")[1];
             if (h1Element) { // Check if the h1 tag exists
                 // Get the title tag
                 var titleElement = document.querySelector('title');
