@@ -11,23 +11,18 @@
         link.setAttribute("rel", "canonical");
         link.setAttribute("href", location.protocol + "//" + location.host + location.pathname);
         document.head.appendChild(link);
-    </script>
-    <!--Script to get the content of the first h1 tag and insert it into the title-->
-    <script type="text/javascript">
-        window.addEventListener('load', function () {
-            //alert("Page loaded!")            
-            //const h1Element = document.querySelector("h1"); //Select the first h1 tag in head tag
-            const h1Element = document.querySelector("body h1"); //Select the first h1 tag in body tag
-            // If an h1 tag exists, update the title with its content
-            if (h1Element) {
-                document.title = h1Element.textContent; // Set the title to the text content of the h1 element
-            }else {
-                //block of code to be executed if the condition is false
-                alert("not find " + h1Element);
-            }               
-        })             
-    </script>
 
+        <!--Script to get the content of the first h1 tag and insert it into the title-->        
+        //const h1Element = document.querySelector("h1"); //Select the first h1 tag in head tag
+        const h1Element = document.querySelector("body h1"); //Select the first h1 tag in body tag
+        // If an h1 tag exists, update the title with its content
+        if (h1Element) {
+            document.title = h1Element.textContent; // Set the title to the text content of the h1 element
+        }else {
+            //block of code to be executed if the condition is false
+            alert("not find " + h1Element);
+        }                  
+    </script>
 
     <script src="js/jquery.js"></script>
     
